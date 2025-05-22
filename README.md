@@ -1,6 +1,10 @@
  HEAD
 # React + Vite
-
+if you want to run this project in your system 
+1) create simple react app like ( npm create vite@latest)
+2) Paste all these files in that app foldern and write npm start 
+3) OR Copy npm module folder from other created app and in this folder
+4) Lastly npm run dev  
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
