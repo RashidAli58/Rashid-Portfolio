@@ -1,0 +1,214 @@
+.hero-section {
+  min-height: 100vh;
+  background-color: black;
+  color: #ccd6f6;
+  font-family: 'Source Code Pro', monospace;
+  padding: 2rem;
+  /* margin-top: 10px; */
+ 
+}
+
+
+.divmainh {
+  background-color:#1a1a1a;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* gap: 2rem; */
+  /* max-width: 1200px; */
+  margin: auto;
+  flex-wrap: wrap; /* allows responsiveness */
+  border-radius: 10px;
+     
+} 
+
+
+
+.heroleft{
+    flex: 1;
+position: relative;
+  overflow: visible;
+  
+}
+
+ .heroleft  p{
+  color: white;
+}
+
+.heroright {
+  flex: 1;
+/* background-color: #3b4252; */
+ height: auto; 
+ border-radius: 10px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.div-self {
+
+  position: absolute;        /* Required for overlaying */
+        height: 280px;             /* Center vertically */
+  right: 3%;              /* Shift left by 10px */
+  transform: translateY(-50%);
+  background-color: #2c2c2c;
+  padding: 2rem;
+  border-radius: 10px;
+  z-index: 1;
+  width: 50%;
+  margin-top: 290px;
+  
+}
+
+
+
+
+.btn1{
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #2A293E;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  border: solid green 2px;
+}
+.btn2{
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2A293E;
+  color: white;
+  border: solid white 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.typewriter-text {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+  background-color: #2c2c2c ;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  display: inline-block;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  /* box-shadow: 0 0 10px rgba(100, 255, 218, 0.2); */
+}
+
+.code-wrapper {
+  color: green; /* <code> tags color */
+}
+
+.typed-text {
+  color: white ; /* Green animated text */
+}
+
+.hero-name {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #64ffda;
+}
+
+
+/* Existing styles remain unchanged */
+
+/* Animation keyframes */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation classes */
+.animate-fadeSlideUp {
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
+/* Add some stagger delay with modifiers */
+.animate-delay-1 {
+  animation-delay: 0.2s;
+}
+.animate-delay-2 {
+  animation-delay: 0.4s;
+}
+.animate-delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* Responsive media query */
+@media (max-width: 768px) {
+  .divmainh {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .heroleft,
+  .heroright {
+    flex: unset;
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .div-self {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-top: 1rem;
+    right: auto;
+    transform: none;
+    padding: 1.5rem;
+  }
+
+  .hero-name {
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .social-icons a {
+    font-size: 1.3rem;
+    margin-left: 8px;
+  }
+
+  .typewriter-text {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .btn1,
+  .btn2 {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}

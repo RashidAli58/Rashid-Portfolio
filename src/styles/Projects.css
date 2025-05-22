@@ -1,0 +1,79 @@
+.projects-section {
+  background-color: #121212;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #1c1c1c;
+  flex: 1 1 450px;
+  max-width: 600px;
+  border-radius: 12px;
+  padding: 25px;
+  position: relative;
+  border-left: 1px solid #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.section-title span {
+  color: #00ff6a;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.badge {
+  background-color: #1f1f1f;
+  border: 1px solid #00ff6a;
+  color: #00ff6a;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-weight: 600;
+  font-size: 13px;
+  box-shadow: 0 2px 8px rgba(0,255,106,0.3);
+}
+
+.org {
+  color: #ddd;
+  font-size: 15px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 14.5px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.tech {
+  margin-top: 15px;
+  font-size: 14.5px;
+  color: #eee;
+}
+
+.tech strong {
+  color: #fff;
+}
